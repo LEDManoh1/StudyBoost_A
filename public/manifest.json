@@ -1,0 +1,16 @@
+{
+    "name": "StudyBoost AI",
+    "short_name": "StudyBoost",
+    "description": "AI-powered educational tools for students and educators.",
+    "start_url": "/dashboard",
+    "display": "standalone",
+    "background_color": "#0f172a",
+    "theme_color": "#3b82f6",
+    "icons": [
+        {
+            "src": "/icon.svg",
+            "sizes": "192x192 512x512",
+            "type": "image/svg+xml"
+        }
+    ]
+}
