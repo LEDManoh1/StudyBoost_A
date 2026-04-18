@@ -60,7 +60,7 @@ export default async function SummariesPage() {
 
                                     {col.summaries[0] && (
                                         <div className="mb-4">
-                                            <p className="text-sm opacity-60 line-clamp-2 italic">"{col.summaries[0].title}"</p>
+                                            <p className="text-sm opacity-60 line-clamp-2 italic">&quot;{col.summaries[0].title}&quot;</p>
                                         </div>
                                     )}
 

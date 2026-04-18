@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ServiceWorkerRegister from "@/components/ServiceWorkerRegister";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "StudyBoost AI | Elevate Your Learning",
@@ -23,7 +24,9 @@ export default function RootLayout({
             <div className="flex gap-8 items-center hidden md:flex">
               <a href="/dashboard" className="hover:text-[var(--primary)] transition-colors">Dashboard</a>
               <a href="/pricing" className="hover:text-[var(--primary)] transition-colors">Pricing</a>
-              <button className="btn-primary transform hover:scale-105 transition-transform">Get Started</button>
+              <Link href="/dashboard">
+                <button className="btn-primary transform hover:scale-105 transition-transform">Start Boosting for Free</button>
+              </Link>
             </div>
             {/* Mobile menu trigger could be here, but Sidebar handles dashboard nav on mobile */}
           </div>

@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StudyBoost 🚀
 
-## Getting Started
+StudyBoost is an AI-powered platform designed to enhance your learning and productivity. Whether you are a student preparing for exams, a professional managing documents, or someone looking to organize their home life, StudyBoost provides the tools you need to succeed.
 
-First, run the development server:
+## 🌟 Key Features for Everyone
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🎓 For Students
+- **Smart Summaries**: Turn long chapters into concise notes in seconds.
+- **AI-Powered Roadmaps**: Generate step-by-step study plans for any subject.
+- **Dynamic Flashcards**: Learn faster with AI-generated flashcards from your documents.
+- **Exam Question Prep**: Generate practice questions to test your knowledge.
+
+### 💼 For Professionals (Work)
+- **Document Management**: Quickly summarize meeting notes and reports.
+- **Task Tracking**: Organize your professional life with clear roadmaps.
+- **Knowledge Base**: Use flashcards to memorize key professional concepts or technical documentation.
+
+### 🏠 For Home Users
+- **Personal Organization**: Create roadmaps for home projects or hobbies.
+- **Quick Learning**: Summarize articles or books for personal growth.
+- **Hobby Mastery**: Use flashcards for learning a new language or skill.
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+- A Firebase project
+- A Gemini API Key from Google AI Studio
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
+   cd StudyBoost_A
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Set up environment variables:
+   ```bash
+   cp .env.example .env
+   # Fill in your variables in .env
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+StudyBoost is optimized for deployment on **Vercel**.
 
-## Learn More
+1. Connect your GitHub repository to Vercel.
+2. Add the environment variables listed in `.env.example` to your Vercel project settings.
+3. Vercel will automatically build and deploy your project on every push.
 
-To learn more about Next.js, take a look at the following resources:
+For detailed instructions, see [DEPLOYMENT.md](file:///home/luqman6/Desktop/StudyBoost_A/DEPLOYMENT.md).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+We welcome contributions! Please see [CONTRIBUTING.md](file:///home/luqman6/Desktop/StudyBoost_A/CONTRIBUTING.md) for details.
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](file:///home/luqman6/Desktop/StudyBoost_A/LICENSE) file for details.

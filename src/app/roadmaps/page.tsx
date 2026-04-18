@@ -10,7 +10,7 @@ export default function RoadmapsPage() {
     const [goal, setGoal] = useState("");
     const [level, setLevel] = useState("Beginner");
     const [hours, setHours] = useState(10);
-    const [roadmap, setRoadmap] = useState<any[] | null>(null);
+    const [roadmap, setRoadmap] = useState<{ id: string; title: string; description: string; status: string }[] | null>(null);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 

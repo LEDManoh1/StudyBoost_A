@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
@@ -48,6 +48,10 @@ model User {
   
   plan          String    @default("FREE") // FREE or PRO
   credits       Int       @default(10)
+  
+  phone         String?   @unique
+  otp           String?
+  otpExpires    DateTime?
   
   collections   Collection[]
 }

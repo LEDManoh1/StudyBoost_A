@@ -1,6 +1,5 @@
 import { Card } from "@/components/Card";
 import Link from "next/link";
-import { Lock } from "lucide-react";
 
 export default function ExamQuestionsPage() {
     return (

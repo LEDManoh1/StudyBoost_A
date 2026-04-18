@@ -5,7 +5,7 @@ import CreateFlashcardModal from "./CreateFlashcardModal";
 import { Plus, BookOpen, Layers } from "lucide-react";
 import { Card } from "@/components/Card";
 
-export default function FlashcardsClient({ collections }: { collections: any[] }) {
+export default function FlashcardsClient({ collections }: { collections: { id: string; name: string; createdAt: string; _count: { flashcards: number } }[] }) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (

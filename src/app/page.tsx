@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Card } from "@/components/Card";
 
 export default function Home() {
@@ -22,19 +21,19 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="flex flex-col items-center text-center p-8">
-            <div className="text-4xl mb-4">✨</div>
-            <h3 className="text-2xl font-bold mb-2">AI Flashcards</h3>
-            <p className="opacity-70">Turn any topic or text into active-recall flashcards automatically.</p>
-          </Card>
-          <Card className="flex flex-col items-center text-center p-8">
-            <div className="text-4xl mb-4">📝</div>
-            <h3 className="text-2xl font-bold mb-2">Smart Summary</h3>
-            <p className="opacity-70">Condense long lectures and textbooks into high-impact study summaries.</p>
-          </Card>
-          <Card className="flex flex-col items-center text-center p-8">
             <div className="text-4xl mb-4">🎓</div>
-            <h3 className="text-2xl font-bold mb-2">Exam Engine</h3>
-            <p className="opacity-70">Generate realistic exam questions based on your specific curriculum.</p>
+            <h3 className="text-2xl font-bold mb-2">For Students</h3>
+            <p className="opacity-70">Turn lectures and textbooks into high-impact flashcards and summaries automatically.</p>
+          </Card>
+          <Card className="flex flex-col items-center text-center p-8">
+            <div className="text-4xl mb-4">💼</div>
+            <h3 className="text-2xl font-bold mb-2">For Work</h3>
+            <p className="opacity-70">Condense long reports, meeting notes, and technical docs into concise action items.</p>
+          </Card>
+          <Card className="flex flex-col items-center text-center p-8">
+            <div className="text-4xl mb-4">🏠</div>
+            <h3 className="text-2xl font-bold mb-2">For Home</h3>
+            <p className="opacity-70">Organize personal projects, summarize articles, and learn new hobbies with AI roadmaps.</p>
           </Card>
         </div>
 

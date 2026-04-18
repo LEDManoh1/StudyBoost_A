@@ -8,10 +8,10 @@ export default function ServiceWorkerRegister() {
             window.addEventListener("load", () => {
                 navigator.serviceWorker
                     .register("/sw.js")
-                    .then((registration) => {
+                    .then(() => {
                         // SW registered
                     })
-                    .catch((registrationError) => {
+                    .catch(() => {
                         // SW registration failed
                     });
             });

@@ -40,7 +40,7 @@ export async function createFlashcardsAction(formData: FormData) {
         }
 
         await prisma.flashcard.createMany({
-            data: cards.map((card: any) => ({
+            data: cards.map((card: { front: string; back: string }) => ({
                 front: card.front,
                 back: card.back,
                 collectionId: collection!.id,
@@ -49,9 +49,10 @@ export async function createFlashcardsAction(formData: FormData) {
 
         revalidatePath("/dashboard");
         return { success: true };
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error("Flashcard generation error:", error);
-        return { success: false, error: error.message || "Failed to generate flashcards" };
+        const message = error instanceof Error ? error.message : "Failed to generate flashcards";
+        return { success: false, error: message };
     }
 }
 
@@ -82,9 +83,10 @@ export async function createSummaryAction(formData: FormData) {
 
         revalidatePath("/dashboard");
         return { success: true };
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error("Summary generation error:", error);
-        return { success: false, error: error.message || "Failed to generate summary" };
+        const message = error instanceof Error ? error.message : "Failed to generate summary";
+        return { success: false, error: message };
     }
 }
 
@@ -95,9 +97,10 @@ export async function generateRoadmapAction(goal: string, level: string, hoursPe
 
         const roadmap = await generateRoadmap(goal, level, hoursPerWeek);
         return { success: true, data: roadmap };
-    } catch (error: any) {
+    } catch (error: unknown) {
         console.error("Roadmap generation error:", error);
-        return { success: false, error: error.message || "Failed to generate roadmap" };
+        const message = error instanceof Error ? error.message : "Failed to generate roadmap";
+        return { success: false, error: message };
     }
 }
 
