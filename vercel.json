@@ -2,53 +2,5 @@
   "buildCommand": "npm run build",
   "devCommand": "npm run dev",
   "installCommand": "npm install",
-  "framework": "nextjs",
-  "nodeVersion": "20.x",
-  "env": {
-    "DATABASE_URL": {
-      "description": "PostgreSQL database connection string"
-    },
-    "NEXTAUTH_URL": {
-      "description": "Your application URL (auto-set by Vercel)"
-    },
-    "NEXTAUTH_SECRET": {
-      "description": "Secret key for NextAuth (run: openssl rand -base64 32)"
-    },
-    "GOOGLE_CLIENT_ID": {
-      "description": "Google OAuth Client ID"
-    },
-    "GOOGLE_CLIENT_SECRET": {
-      "description": "Google OAuth Client Secret"
-    },
-    "GEMINI_API_KEY": {
-      "description": "Google Gemini API Key"
-    },
-    "NEXT_PUBLIC_FIREBASE_API_KEY": {
-      "description": "Firebase API Key (public)"
-    },
-    "NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN": {
-      "description": "Firebase Auth Domain"
-    },
-    "NEXT_PUBLIC_FIREBASE_PROJECT_ID": {
-      "description": "Firebase Project ID"
-    },
-    "NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET": {
-      "description": "Firebase Storage Bucket"
-    },
-    "NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID": {
-      "description": "Firebase Messaging Sender ID"
-    },
-    "NEXT_PUBLIC_FIREBASE_APP_ID": {
-      "description": "Firebase App ID"
-    },
-    "FIREBASE_PROJECT_ID": {
-      "description": "Firebase Admin Project ID (server-only)"
-    },
-    "FIREBASE_CLIENT_EMAIL": {
-      "description": "Firebase Service Account Email (server-only)"
-    },
-    "FIREBASE_PRIVATE_KEY": {
-      "description": "Firebase Private Key (server-only)"
-    }
-  }
+  "framework": "nextjs"
 }

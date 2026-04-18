@@ -7,16 +7,13 @@ import CredentialsProvider from "next-auth/providers/credentials";
 export const { handlers, auth, signIn, signOut } = NextAuth({
     trustHost: true,
     adapter: PrismaAdapter(prisma),
-    secret: process.env.NEXTAUTH_SECRET || process.env.AUTH_SECRET,
-    session: { strategy: "jwt", maxAge: 30 * 24 * 60 * 60 }, // 30 days
+    secret: process.env.AUTH_SECRET,
+    session: { strategy: "jwt" },
     pages: {
         signIn: "/",
         error: "/",
     },
     callbacks: {
-        authorized({ auth }) {
-            return !!auth?.user;
-        },
         jwt({ token, user }) {
             if (user) {
                 token.id = user.id;
